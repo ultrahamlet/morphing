@@ -31,7 +31,11 @@ public:
 	GLUquadricObj *quadric; //for gluSphere
 	ofEasyCam cam;
 	float move;
+	int frame;
 	ofFbo fbo;
+	vector<glm::vec3>ovc[2];
+	vector<glm::vec3>diff;
+	float add;
 
 	
 };
