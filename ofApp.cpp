@@ -32,7 +32,6 @@ void ofApp::setup() {
 	
 	ofDisableArbTex();
 	fbo.allocate(512, 512, GL_RGBA);
-
 }
 
 void ofApp::update() {
