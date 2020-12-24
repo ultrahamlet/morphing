@@ -28,7 +28,7 @@ void ofApp::setup() {
 	faceNum = 0;
 	loadFace("0000.jpg");
 	faceNum = 1;
-	loadFace("0006.jpg");
+	loadFace("0001.jpg");
 	
 	ofDisableArbTex();
 	fbo.allocate(512, 512, GL_RGBA);
@@ -53,17 +53,6 @@ void ofApp::update() {
 		delaunay[1].triangleMesh.setVertex(i, vc1[i]);
 	}
 
-	/*
-	// morphing animation
-	for (int j = 0; j < 2; j++) {
-		vector<glm::vec3>vc = delaunay[j].triangleMesh.getVertices();
-		for (int i = 0; i < vc.size(); i++) {
-			if (i > 30 && i < 40)vc[i].y = vc[i].y + move;
-			delaunay[j].triangleMesh.setVertex(i, vc[i]);
-			move = move + 0.00001;
-		}
-	}
-	*/
 	
 }
 
