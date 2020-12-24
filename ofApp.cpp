@@ -52,7 +52,6 @@ void ofApp::update() {
 		delaunay[1].triangleMesh.setVertex(i, vc1[i]);
 	}
 
-	
 }
 
 
