@@ -12,8 +12,8 @@ put blend.frag and blend.vert under bin/data
 start application to view morphing 
 
 
-using following addons
-ofxCv
-ofxFaceTracker
-ofxFaceTrackerThreaded
-ofxDelaunay
+using following addons  
+ofxCv  
+ofxFaceTracker  
+ofxFaceTrackerThreaded  
+ofxDelaunay  
