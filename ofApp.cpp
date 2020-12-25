@@ -88,6 +88,7 @@ void ofApp::draw() {
 	}
 
 	cam.begin();
+	ofSetBackgroundColor(0, 0, 0);
 	ofScale(1, -1, 1);
 	shader.begin();
 	shader.setUniformTexture("before", image[0], 1);
@@ -99,9 +100,9 @@ void ofApp::draw() {
 	glEnable(GL_DEPTH_TEST); // important!
 	// gluSphere(quadric, 150, 400, 10);
 	//glTranslated(-ofGetWidth() / 4, 50.0, 0.0);
-	glTranslated(0.0, 20.0, 0.0);
-	glRotated(45, 0, 0, 1);
-	gluDisk(quadric, 0, 350, 4, 4);
+	//glTranslated(0.0, 20.0, 0.0);
+	glRotated(0, 0, 0, 1);
+	gluDisk(quadric, 0, 350, 60, 1);
 	//ofRect(100, 100, 200, 300);
 	shader.end();
 	cam.end();
@@ -116,14 +117,14 @@ void ofApp::loadFace(string face) {
 	int len;
 
 	len = (img.getWidth() > img.getHeight()) ? img.getWidth() : img.getHeight();
-	len = len + (int)(len*0.2);
+	len = len + (int)(len*0.25);
 	fbo.allocate(len, len, GL_RGBA);
 	rectimg.allocate(len, len, OF_IMAGE_COLOR);
 	ofFbo ftmp;
 	ftmp.allocate(len, len, GL_RGBA);
 	ftmp.begin();
 	rectimg.draw(0, 0);
-	img.draw(len - img.getWidth() - ((len - img.getWidth()) / 2), (int)len*0.25);
+	img.draw(len - img.getWidth() - ((len - img.getWidth()) / 2), len - img.getHeight() - ((len - img.getHeight()) / 2));
 	ftmp.end();
 	ofTexture tex = ftmp.getTexture();
 	ofPixels pixels;

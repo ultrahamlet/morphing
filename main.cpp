@@ -1,7 +1,7 @@
 #include "ofApp.h"
 
 int main() {
-	ofSetupOpenGL(960, 480, OF_WINDOW);
+	ofSetupOpenGL(720, 480, OF_WINDOW);
 	//ofGLFWWindowSettings settings;
 	//settings.setGLVersion(3, 2);
 	//settings.width = 1024;
