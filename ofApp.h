@@ -14,12 +14,12 @@ public:
 	void draw();
 	void dragEvent(ofDragInfo dragInfo);
 	void loadFace(string face);
-	
+
 	void keyPressed(int key);
 
 	ofxFaceTrackerThreaded camTracker;
 	//ofVideoGrabber cam;
-	
+
 	ofxFaceTracker srcTracker;
 	ofImage src[2];
 	vector<glm::vec2> srcPoints[2];
@@ -30,12 +30,12 @@ public:
 	ofShader shader;
 	GLUquadricObj *quadric; //for gluSphere
 	ofEasyCam cam;
-	float move;
+	//float move;
 	int frame;
 	ofFbo fbo;
 	vector<glm::vec3>ovc[2];
 	vector<glm::vec3>diff;
 	float add;
 
-	
+
 };
