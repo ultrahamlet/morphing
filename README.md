@@ -17,3 +17,8 @@ ofxCv
 ofxFaceTracker  
 ofxFaceTrackerThreaded  
 ofxDelaunay  
+
+AFM.exe is the fron end of AutoFaceMorph.exe.
+The link below is a video showing how to use it.
+
+https://www.youtube.com/watch?v=gJc-kKpHQ4M
