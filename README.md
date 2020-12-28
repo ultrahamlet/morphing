@@ -24,7 +24,7 @@ The link below is a video showing how to use it.
 https://www.youtube.com/watch?v=gJc-kKpHQ4M  
 
 If you are not familiar with building openframeworks projekct,
-excutabe file is here:
+excutabe file is here:  for win10 64bit
 
-https://dcf.jp/AutoFaceMorph/AutoFaceMorph.zip
+https://dcf.jp/AutoFaceMorph/AutoFaceMorph.zip 
 
