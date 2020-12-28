@@ -21,4 +21,10 @@ ofxDelaunay
 AFM.exe is the fron end of AutoFaceMorph.exe.
 The link below is a video showing how to use it.
 
-https://www.youtube.com/watch?v=gJc-kKpHQ4M
+https://www.youtube.com/watch?v=gJc-kKpHQ4M  
+
+If you are not familiar with building openframeworks projekct,
+excutabe file is here:
+
+https://dcf.jp/AutoFaceMorph/AutoFaceMorph.zip
+
